@@ -4,9 +4,9 @@ import './App.css'
 function App() {
   return (
     <>
-      <div className='container'>
+      <main className='container'>
         <img src={vmLogo} className='main_logo' alt="VM logo" />
-      </div>
+      </main>
     </>
   )
 }
