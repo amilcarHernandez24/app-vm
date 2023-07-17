@@ -10,7 +10,7 @@
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: lightgray;
+    background-color: var(--primary)
 }
 
 .main_logo {
