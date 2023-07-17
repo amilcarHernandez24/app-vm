@@ -2,7 +2,6 @@ import vmLogo from './assets/img/vm-logo.svg'
 import './App.css'
 
 function App() {
-
   return (
     <>
       <div className='container'>
