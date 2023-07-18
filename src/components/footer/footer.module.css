@@ -1,54 +1,56 @@
-.footer {
-    display: flex;
-    position: relative;
-    height: 80px;
-    padding: 10px;
+@media (max-width: 480px) {
+    .footer {
+        display: flex;
+        position: relative;
+        height: 80px;
+        padding: 10px;
 
-    background: linear-gradient(225deg, var(--white), var(--grey));
-    box-shadow: var(--grey) 0px 8px 24px, var(--grey) 0px 16px 56px, var(--grey) 0px 24px 80px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
+        background: linear-gradient(225deg, var(--white), var(--grey));
+        box-shadow: var(--grey) 0px 8px 24px, var(--grey) 0px 16px 56px, var(--grey) 0px 24px 80px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
 
-.add {
-    position: absolute;
-    top: -30px;
-    right: 40px;
-    z-index: 1;  
+    .add {
+        position: absolute;
+        top: -30px;
+        right: 40px;
+        z-index: 1;  
 
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    height: 60px;
-    width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        height: 60px;
+        width: 60px;
 
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 3rem;
-    color: var(--white);
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 3rem;
+        color: var(--white);
 
-    box-shadow: var(--grey) 0px 8px 24px, var(--grey) 0px 16px 56px, var(--grey) 0px 24px 80px;
-    background: linear-gradient(225deg, var(--primary), var(--accent));
-    border-radius: 20px;
-}
+        box-shadow: var(--grey) 0px 8px 24px, var(--grey) 0px 16px 56px, var(--grey) 0px 24px 80px;
+        background: linear-gradient(225deg, var(--primary), var(--accent));
+        border-radius: 20px;
+    }
 
-.options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    .options {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.option {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    width: 60px;
+    .option {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        width: 60px;
 
-    font-family: var(--font-family);
-    font-weight: 900;
-    font-size: 1rem;
-    color: var(--primary);
+        font-family: var(--font-family);
+        font-weight: 900;
+        font-size: 1rem;
+        color: var(--primary);
 
-    padding: 10px;
+        padding: 10px;
+    }
 }
