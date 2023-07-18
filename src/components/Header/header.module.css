@@ -1,0 +1,36 @@
+@media (max-width: 480px) {
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+
+    background-color: var(--white);
+  }
+
+  .logo {
+    width: 4.3rem;
+    height:3.6rem;
+  }
+
+  .header_content {
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .header_title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .header_user {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+}
