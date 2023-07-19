@@ -10,8 +10,8 @@ function Footer() {
             <div className={styles.option}><span>-</span></div>
             <div className={styles.option}><span>-</span></div>
             <div className={styles.option}><span>-</span></div>
-        </div> 
-        <div className={styles.add}>+</div>      
+        </div>
+        <div className={styles.add}>+</div>
       </footer>
     </>
   )

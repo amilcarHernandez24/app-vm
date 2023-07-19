@@ -6,7 +6,9 @@
     width: 100vw;
     height: 10vh;
 
-    background-color: var(--white);
+    background: linear-gradient(225deg, var(--white), var(--grey));
+    box-shadow: var(--grey) 0px 8px 24px, var(--grey) 0px 16px 56px, var(--grey) 0px 24px 80px;
+    border-radius: 0px 0px 8px 8px;
   }
 
   .logo {
@@ -23,13 +25,13 @@
   }
 
   .header_title {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-family);
     font-size: 1rem;
     font-weight: 700;
   }
 
   .header_user {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-family);
     font-size: 0.75rem;
     font-weight: 500;
   }
