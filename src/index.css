@@ -2,6 +2,7 @@
     --black: #161617;
     --white: #FBFBFD;
     --grey: #E0E0E0;
+    --dark-grey: #3c3c41;
     --primary: #FF4747;
     --secondary: #4a0000;
     --accent: #9D85FF;
@@ -10,4 +11,8 @@
     --danger: #D22C2C;
 
     --font-family: 'Roboto', sans-serif;
+}
+
+#root {
+    background-color: var(--white);
 }
