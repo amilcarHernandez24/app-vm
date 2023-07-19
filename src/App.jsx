@@ -1,15 +1,13 @@
-import vmLogo from './assets/img/vm-logo.svg'
 import './App.css'
 import Footer from './components/footer'
 import Header from './components/header'
+import Layout from './components/layout'
 
 function App() {
   return (
     <>
       <Header />
-      <main className='container'>
-        <img src={vmLogo} className='main_logo' alt="VM logo" />
-      </main>
+      <Layout />
       <Footer />
     </>
   )

@@ -1,0 +1,28 @@
+{
+  "info": [
+    {
+      "store": "Tres Cruces",
+      "store_id": 1,
+      "brand": "BLue Steal",
+      "brand_id": 1,
+      "collection": "mj_joven",
+      "collection_id": 1
+    },
+    {
+      "store": "18 de Julio",
+      "store_id": 2,
+      "brand": "BLue Steal",
+      "brand_id": 1,
+      "collection": "mj_rebel",
+      "collection_id": 2
+    },
+    {
+      "store": "Punta Carretas",
+      "store_id": 3,
+      "brand": "BLue Steal",
+      "brand_id": 1,
+      "collection": "mj_soft",
+      "collection_id": 4
+    }
+  ]
+}

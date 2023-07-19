@@ -3,18 +3,3 @@
     margin: 0;
     padding: 0;
 }
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    background-color: var(--white);
-}
-
-.main_logo {
-    width: 200px;
-    height: 200px;
-    opacity: 1;
-}
