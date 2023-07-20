@@ -4,27 +4,27 @@ import Box from '../shared/box'
 function Home () {
     return (
       <>
-        <div className={styles.home}>
-          <div className={styles.home_header}>
+        <section className={styles.home}>
+          <article className={styles.home_header}>
             <div className={styles.home_info}>
               <h3 className={styles.home_title}>
-                1° 15na Agosto
+                1° Etapa Agosto
               </h3>
               <div className={styles.home_date}>
                 <small>01/08/2023 -</small>
-                <small>15/08/2023</small>
+                <small> 15/08/2023</small>
               </div>
             </div>
             <div className={styles.home_completado}>
               <h4>100 %</h4>
             </div>
-          </div>
+          </article>
 
-          <div className={styles.home_status_bar}>
+          <article className={styles.home_status_bar}>
             <span>Completado</span>
-          </div>
+          </article>
 
-          <div className={styles.home_body}>
+          <article className={styles.home_body}>
             <div className={styles.home_filters}>
               <div className={styles.home_filter_all}>
                   <span>All <small>10</small> | </span>
@@ -49,8 +49,8 @@ function Home () {
               <Box />
               <Box />
             </div>
-          </div>
-        </div>
+          </article>
+        </section>
       </>
     )
 }
