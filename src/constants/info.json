@@ -1,28 +1,35 @@
 {
-  "info": [
+  "period": "1° Etapa Agosto",
+  "date_begin": "02-08-2023",
+  "date_end": "20-08-2023",
+  "tasks": [
     {
+      "id": 1,
       "store": "Tres Cruces",
       "store_id": 1,
       "brand": "BLue Steal",
       "brand_id": 1,
-      "collection": "mj_joven",
-      "collection_id": 1
+      "collection": "MJ_joven",
+      "collection_id": 1,
+      "status": 1,
+      "date_created": "02/08/2023",
+      "user": "Amilcar Hernández",
+      "user_id": 1,
+      "img": "https://img.freepik.com/fotos-premium/interior-tienda-ropa-mujer-moda-compras_120897-3015.jpg?w=2000"
     },
     {
-      "store": "18 de Julio",
-      "store_id": 2,
+      "id": 2,
+      "store": "Tres Cruces",
+      "store_id": 1,
       "brand": "BLue Steal",
       "brand_id": 1,
-      "collection": "mj_rebel",
-      "collection_id": 2
-    },
-    {
-      "store": "Punta Carretas",
-      "store_id": 3,
-      "brand": "BLue Steal",
-      "brand_id": 1,
-      "collection": "mj_soft",
-      "collection_id": 4
+      "collection": "MJ_CASUAL",
+      "collection_id": 2,
+      "status": 0,
+      "date_created": "02/08/2023",
+      "user": "Amilcar Hernández",
+      "user_id": 1,
+      "img": "https://img.freepik.com/fotos-premium/interior-tienda-ropa-mujer-moda-compras_120897-3015.jpg?w=2000"
     }
   ]
 }

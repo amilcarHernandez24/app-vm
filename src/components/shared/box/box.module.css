@@ -27,6 +27,12 @@
     background: linear-gradient(225deg, var(--primary), var(--accent));
     border-radius: 20px;
   }
+  .home_task_img_img {
+    height: 50px;
+    width: 50px;
+
+    border-radius: 10px;
+  }
   .home_task_header {
     display: flex;
     align-items: flex-start;
