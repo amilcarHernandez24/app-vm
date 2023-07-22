@@ -16,18 +16,12 @@
 
   .home_task_header {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
   }
-  .home_task_footer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
 
-    border-top: 1px solid var(--grey);
-  }
-  .home_task_title {
-    text-decoration: line-through;
+  .home_task_subtitle {
+    margin-right: -150px;
   }
 
   .home_task_status {
@@ -36,4 +30,13 @@
 
     border-radius: 50%;
   }
+
+  .home_task_footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    border-top: 1px solid var(--grey);
+  }
+
 }

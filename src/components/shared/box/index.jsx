@@ -19,12 +19,22 @@ function Box ({ item }) {
     }
   }
 
+  const lineThrough = (status) => {
+    switch (status) {
+      case 1:
+        return {textDecoration: 'line-through'}
+      default:
+        ''
+    }
+  }
+
+
   return (
     <>
       <section className={styles.home_task}>
         <div className={styles.home_task_content}>
           <div className={styles.home_task_header}>
-            <div className={styles.home_task_title}>
+            <div style={lineThrough(item.status_id)} className={styles.home_task_title}>
               <h4>{item.brand} <small>{item.collection}</small></h4>
             </div>
             <div className={styles.home_task_subtitle}>
