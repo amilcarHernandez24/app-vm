@@ -45,7 +45,7 @@
     font-weight: 600;
     color: var(--white);
 
-    background-color: var(--success);
+    background-color: var(--grey);
     border-radius: 20px;
 
     content: '';

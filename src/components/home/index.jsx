@@ -14,6 +14,31 @@ function Home () {
   };
 
 
+  const percentageName = (percentage) => {
+    let value = percentage;
+    return value <= 40 ? 'Aun falta' : value <= 79 ? 'Queda poco' :value <= 99 ? 'Casi listo' : 'Completado'
+  }
+  //Rango: 0 - 40 'Aun falta' / 41 - 79 'Queda poco' / 80 - 99 'Casi listo'/ 100 'Completado',
+
+  const percentageGrowBar = (percentage) => {
+
+    let caseOne = percentage <= 40;
+    let caseTwo = percentage <= 79;
+    let caseThree = percentage <= 99;
+
+    switch (percentage) {
+      case caseOne:
+        return {backgroundColor: 'var(--danger)', width: `${getPercentage(INFO.tasks, 1)}%`}
+      case caseTwo:
+        return {backgroundColor: 'var(--warning)', width: `${getPercentage(INFO.tasks, 1)}%`}
+      case caseThree:
+        return {backgroundColor: 'var(--success)', width: `${getPercentage(INFO.tasks, 1)}%`}
+      default:
+        return {backgroundColor: 'var(--success)', width: `${getPercentage(INFO.tasks, 1)}%`}
+    }
+  }
+
+
   const getColor = (percentage) => {
     const danger ='var(--danger)';
     const warning = 'var(--warning)';
@@ -40,7 +65,7 @@ function Home () {
         </article>
 
         <article className={styles.home_status_bar}>
-          <span>{'Completado'}</span>
+          <span style={percentageGrowBar(getPercentage(INFO.tasks, 1))}>{percentageName(getPercentage(INFO.tasks, 1))}</span>
         </article>
 
         <article className={styles.home_body}>
