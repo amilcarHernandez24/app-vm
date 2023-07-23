@@ -37,10 +37,12 @@ function Box ({ item }) {
             <div style={lineThrough(item.status_id)} className={styles.home_task_title}>
               <h4>{item.brand} <small>{item.collection}</small></h4>
             </div>
-            <div className={styles.home_task_subtitle}>
-              <small>{item.status}</small>
-            </div>
-            <div style={getColorStatus(item.status_id)} className={styles.home_task_status}>
+            <div  className={styles.home_task_status}>
+              <div className={styles.home_task_subtitle}>
+                <small>{item.status}</small>
+              </div>
+              <div style={getColorStatus(item.status_id)}  className={styles.home_task_status_icon}>
+              </div>
             </div>
           </div>
           <div className={styles.home_task_footer}>

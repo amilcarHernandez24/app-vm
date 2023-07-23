@@ -26,16 +26,15 @@ function Home () {
     let caseTwo = percentage <= 79;
     let caseThree = percentage <= 99;
 
-    switch (percentage) {
-      case caseOne:
-        return {backgroundColor: 'var(--danger)', width: `${getPercentage(INFO.tasks, 1)}%`}
-      case caseTwo:
-        return {backgroundColor: 'var(--warning)', width: `${getPercentage(INFO.tasks, 1)}%`}
-      case caseThree:
-        return {backgroundColor: 'var(--success)', width: `${getPercentage(INFO.tasks, 1)}%`}
-      default:
-        return {backgroundColor: 'var(--success)', width: `${getPercentage(INFO.tasks, 1)}%`}
-    }
+    if (caseOne) {
+      return {backgroundColor: 'var(--danger)', width: `${percentage}%`}
+    } else if (caseTwo) {
+      return {backgroundColor: 'var(--warning)', width: `${percentage}%`}
+    } else if  (caseThree) {
+      return {backgroundColor: 'var(--success)', width: `${percentage}%`}
+    } 
+
+    return {backgroundColor: 'var(--success)', width: `${percentage}%`}
   }
 
 
