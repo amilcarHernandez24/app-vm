@@ -1,5 +1,5 @@
 import styles from './header.module.css'
-import logo from '../../assets/img/logo-header.svg'
+import logo from '../../assets/img/vmlogo.svg'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 

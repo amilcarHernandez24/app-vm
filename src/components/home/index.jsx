@@ -32,7 +32,7 @@ function Home () {
       return {backgroundColor: 'var(--warning)', width: `${percentage}%`}
     } else if  (caseThree) {
       return {backgroundColor: 'var(--success)', width: `${percentage}%`}
-    } 
+    }
 
     return {backgroundColor: 'var(--success)', width: `${percentage}%`}
   }
@@ -73,16 +73,16 @@ function Home () {
                 <span>All <small>{INFO.tasks.length}</small> | </span>
             </div>
             <div className={styles.home_filter_non_taken}>
-                <span>Untaken <small>{INFO.tasks.reduce((count, task) => count + (task.status === 0 ? 1 : 0), 0)}</small></span>
+                <span>Untaken <small>{INFO.tasks.reduce((count, task) => count + (task.status_id === 0 ? 1 : 0), 0)}</small></span>
             </div>
             <div className={styles.home_filter_pending}>
-                <span>Pending <small>{INFO.tasks.reduce((count, task) => count + (task.status === 2 ? 1 : 0), 0)}</small></span>
+                <span>Pending <small>{INFO.tasks.reduce((count, task) => count + (task.status_id === 2 ? 1 : 0), 0)}</small></span>
             </div>
             <div className={styles.home_filter_rejected}>
-                <span>Rejected <small>{INFO.tasks.reduce((count, task) => count + (task.status === 3 ? 1 : 0), 0)}</small></span>
+                <span>Rejected <small>{INFO.tasks.reduce((count, task) => count + (task.status_id === 3 ? 1 : 0), 0)}</small></span>
             </div>
             <div className={styles.home_filter_done}>
-                <span>Done <small>{INFO.tasks.reduce((count, task) => count + (task.status === 1 ? 1 : 0), 0)}</small></span>
+                <span>Done <small>{INFO.tasks.reduce((count, task) => count + (task.status_id === 1 ? 1 : 0), 0)}</small></span>
             </div>
           </div>
 

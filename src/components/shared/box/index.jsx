@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheck, faXmark, faMagnifyingGlass, faArrowUpFromBracket } from '@fortawesome/free-solid-svg-icons'
+
 import styles from './box.module.css'
 
 function Box ({ item }) {
@@ -9,15 +12,33 @@ function Box ({ item }) {
 
     switch (status) {
       case done:
-        return {backgroundColor: 'var(--success)'}
+        return {color: 'var(--success)'}
       case pending:
-        return {backgroundColor: 'var(--warning)'}
+        return {color: 'var(--warning)'}
       case rejected:
-        return {backgroundColor: 'var(--danger)'}
+        return {color: 'var(--danger)'}
       default:
-        return {backgroundColor: 'var(--grey)'}
+        return {color: 'var(--grey)'}
     }
   }
+
+  const getIconStatus = (status) => {
+    const done = 1;
+    const pending = 2;
+    const rejected = 3;
+
+    switch (status) {
+      case done:
+        return faCheck
+      case pending:
+        return faMagnifyingGlass
+      case rejected:
+        return faXmark
+      default:
+        return faArrowUpFromBracket
+    }
+  }
+
 
   const lineThrough = (status) => {
     switch (status) {
@@ -42,6 +63,7 @@ function Box ({ item }) {
                 <small>{item.status}</small>
               </div>
               <div style={getColorStatus(item.status_id)}  className={styles.home_task_status_icon}>
+              <FontAwesomeIcon icon={getIconStatus(item.status_id)} />
               </div>
             </div>
           </div>
