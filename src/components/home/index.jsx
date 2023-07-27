@@ -1,9 +1,27 @@
+import { useState } from 'react';
+
 import styles from './home.module.css'
 import Box from '../shared/box'
 
 import INFO from '../../constants/info.json'
 
 function Home () {
+
+  const [filteredStatusId, setFilteredStatusId] = useState(null);
+  const [filteredData, setFilteredData] = useState(INFO.tasks);
+
+  const handleClick = (status) => {
+    const data = INFO.tasks;
+
+    if (status === null || status === filteredStatusId) {
+      setFilteredData(data)
+      setFilteredStatusId(null);
+    } else {
+      const newData = data.filter((item) => item.status_id === status);
+      setFilteredData(newData);
+      setFilteredStatusId(status);
+    }
+  };
 
   const getPercentage = (tasks, status) => {
     const total = tasks.length;
@@ -12,7 +30,6 @@ function Home () {
       total > 0 ? (count / total) * 100 : 0
     )
   };
-
 
   const percentageName = (percentage) => {
     let value = percentage;
@@ -69,26 +86,26 @@ function Home () {
 
         <article className={styles.home_body}>
           <div className={styles.home_filters}>
-            <div className={styles.home_filter_all}>
-                <span>All <small>{INFO.tasks.length}</small> | </span>
+            <div className={filteredStatusId === null ? styles.status_active : ''}>
+                <span onClick={() => handleClick(null)}>All <small>{INFO.tasks.length}</small> | </span>
             </div>
-            <div className={styles.home_filter_non_taken}>
-                <span>Untaken <small>{INFO.tasks.reduce((count, task) => count + (task.status_id === 0 ? 1 : 0), 0)}</small></span>
+            <div className={filteredStatusId === 0 ? styles.status_active : ''}>
+                <span onClick={() => handleClick(0)}>Untaken <small>{INFO.tasks.reduce((count, task) => count + (task.status_id === 0 ? 1 : 0), 0)}</small></span>
             </div>
-            <div className={styles.home_filter_pending}>
-                <span>Pending <small>{INFO.tasks.reduce((count, task) => count + (task.status_id === 2 ? 1 : 0), 0)}</small></span>
+            <div className={filteredStatusId === 3 ? styles.status_active : ''}>
+                <span onClick={() => handleClick(3)}>Rejected <small>{INFO.tasks.reduce((count, task) => count + (task.status_id === 3 ? 1 : 0), 0)}</small></span>
             </div>
-            <div className={styles.home_filter_rejected}>
-                <span>Rejected <small>{INFO.tasks.reduce((count, task) => count + (task.status_id === 3 ? 1 : 0), 0)}</small></span>
+            <div className={filteredStatusId === 2 ? styles.status_active : ''}>
+                <span onClick={() => handleClick(2)}>Pending <small>{INFO.tasks.reduce((count, task) => count + (task.status_id === 2 ? 1 : 0), 0)}</small></span>
             </div>
-            <div className={styles.home_filter_done}>
-                <span>Done <small>{INFO.tasks.reduce((count, task) => count + (task.status_id === 1 ? 1 : 0), 0)}</small></span>
+            <div className={filteredStatusId === 1 ? styles.status_active : ''}>
+                <span onClick={() => handleClick(1)}>Done <small>{INFO.tasks.reduce((count, task) => count + (task.status_id === 1 ? 1 : 0), 0)}</small></span>
             </div>
           </div>
 
           <div className={styles.home_content}>
             {
-              INFO.tasks.map((item) =>
+              filteredData.map((item) =>
                   <Box key={item.id} item={item} />
                 )
             }

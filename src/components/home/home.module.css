@@ -72,6 +72,11 @@
     margin-top: 30px;
   }
 
+  .status_active {
+    color: var(--primary);
+    font-weight: bold;
+  }
+
   .home_filters small {
     padding: 5px 10px;
 

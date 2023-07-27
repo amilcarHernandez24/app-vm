@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheck, faXmark, faMagnifyingGlass, faArrowUpFromBracket } from '@fortawesome/free-solid-svg-icons'
+import { faCheck, faXmark, faExclamation, faArrowUpFromBracket } from '@fortawesome/free-solid-svg-icons'
 
 import styles from './box.module.css'
 
@@ -31,7 +31,7 @@ function Box ({ item }) {
       case done:
         return faCheck
       case pending:
-        return faMagnifyingGlass
+        return faExclamation
       case rejected:
         return faXmark
       default:
@@ -39,23 +39,12 @@ function Box ({ item }) {
     }
   }
 
-
-  const lineThrough = (status) => {
-    switch (status) {
-      case 1:
-        return {textDecoration: 'line-through'}
-      default:
-        ''
-    }
-  }
-
-
   return (
     <>
       <section className={styles.home_task}>
         <div className={styles.home_task_content}>
           <div className={styles.home_task_header}>
-            <div style={lineThrough(item.status_id)} className={styles.home_task_title}>
+            <div className={styles.home_task_title}>
               <h4>{item.brand} <small>{item.collection}</small></h4>
             </div>
             <div  className={styles.home_task_status}>
