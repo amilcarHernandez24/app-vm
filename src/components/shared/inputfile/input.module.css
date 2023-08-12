@@ -1,0 +1,18 @@
+.input {
+    display: none;
+}
+
+.label {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 20px;
+    
+    color: var(--dark-grey);
+
+    background-color: var(--grey);
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+

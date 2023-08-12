@@ -1,14 +1,26 @@
-.form_button {
+.button {
   padding: 1rem;
   width: 100%;
+  margin: 10px 0px;
 
   font-weight: 700;
   color: var(--white);
   text-transform: uppercase;
 
-  background-color: var(--primary);
   border: none;
   border-radius: 8px;
 
   cursor: pointer;
+}
+
+.primary {
+  background-color: var(--primary);
+}
+
+.success {
+  background-color: var(--success);
+}
+
+.danger {
+  background-color: var(--danger);
 }

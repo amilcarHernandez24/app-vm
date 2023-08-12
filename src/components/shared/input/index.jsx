@@ -1,6 +1,6 @@
-import styles from './input.module.css';
+import styles from './input.module.css'
 
-const Input = ({ type = 'text', title, defaultValue, error }) => {
+function Input ({ type = 'text', title, defaultValue, error }) {
 
   return (
     <label className={styles.label}>
@@ -8,11 +8,11 @@ const Input = ({ type = 'text', title, defaultValue, error }) => {
       <input
         type={type}
         defaultValue={defaultValue}
-        className={error ? styles.inputRed : ''}
+        className={error ? styles.inputRed : styles.input}
       />
       {error && <p className={styles.label}>{error}</p>}
     </label>
-  );
-};
+  )
+}
 
-export default Input;
+export default Input

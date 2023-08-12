@@ -1,0 +1,16 @@
+.vm {
+    display: flex;
+    flex-direction: column;
+    padding: 90px 20px;
+    width: 100%;
+
+    font-family: var(--font-family);
+    color: var(--dark-grey);
+
+    background-color: var(--white);
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}

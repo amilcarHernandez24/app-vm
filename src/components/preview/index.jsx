@@ -9,13 +9,23 @@ function Preview () {
   return (
     <>
       <section className={styles.section}>
-        <article className={styles.preview_info}>
-          <div className={styles.preview_info_header}>
-            <h3>{DETAILS.store}</h3>
-            <small>{DETAILS.period}</small>
+        <article className={styles.preview_header}>
+          <div className={styles.preview_info}>
+            <h3 className={styles.preview_title}>
+              {DETAILS.period}
+            </h3>
+            <div className={styles.preview_SUBTITLE}>
+              <small>{DETAILS.date_begin} - </small>
+              <small>{DETAILS.date_end}</small>
+            </div>
           </div>
-          <small>{DETAILS.collection}</small>
+          <div className={styles.preview_store}>
+            <h4>{DETAILS.brand} {DETAILS.collection}</h4>
+            <div>&nbsp;</div>
+          </div>
         </article>
+      </section>
+      <section className={styles.section_preview}>
         <article className={styles.preview_img_container}>
         {
           DETAILS.img.map((item) =>
@@ -28,8 +38,8 @@ function Preview () {
         </article>
         <div className={styles.button}>
           <Buttons
-            buttonType="form_button"
-            buttonColor="Aca le paso clase que esta en el comp button"
+            buttonType="button"
+            buttonColor="primary"
             type="submit"
             title='Confirmar'
           />
