@@ -1,0 +1,14 @@
+.form_button {
+  padding: 1rem;
+  width: 100%;
+
+  font-weight: 700;
+  color: var(--white);
+  text-transform: uppercase;
+
+  background-color: var(--primary);
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+}

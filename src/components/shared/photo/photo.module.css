@@ -1,0 +1,17 @@
+.photo_content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 44vw;
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.photo_icons {
+    display: flex;
+    gap: 15px;
+}

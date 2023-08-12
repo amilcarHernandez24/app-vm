@@ -3,7 +3,6 @@ import styles from './buttons.module.css';
 const FunctionalButton = ({
   type = 'button',
   title = null,
-  icon = null,
   action = null,
   buttonType,
   buttonColor
@@ -11,8 +10,6 @@ const FunctionalButton = ({
   return (
     <button className={`${styles[buttonType]} ${styles[buttonColor]}`} onClick={action} type={type}>
       <div>{title}</div>
-      {icon}
-      <i></i>
     </button>
   );
 };

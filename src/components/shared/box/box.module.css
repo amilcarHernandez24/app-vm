@@ -42,4 +42,8 @@
     border-top: 1px solid var(--grey);
   }
 
+  .navlink {
+    text-decoration: none;
+    color: var(--dark-grey);
+  }
 }

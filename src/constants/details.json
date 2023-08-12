@@ -1,0 +1,30 @@
+{
+  "id": 1,
+  "period": "1° Etapa Agosto",
+  "date_begin": "02-08-2023",
+  "date_end": "20-08-2023",
+  "store": "Tres Cruces",
+  "store_id": 1,
+  "brand": "Ripping",
+  "brand_id": 1,
+  "collection": "MJ_outdoors",
+  "collection_id": 2,
+  "status_id": 3,
+  "status": "Rechazada",
+  "date_created": "02/08/2023",
+  "user": "Sofia Esquire",
+  "user_id": 1,
+  "img": [
+    {
+      "id": 1,
+      "status_id": 1,
+      "url": "https://img.freepik.com/fotos-premium/interior-tienda-ropa-mujer-moda-compras_120897-3015.jpg?w=2000"
+    },
+    {
+      "id": 2,
+      "status_id": 3,
+      "url": "https://img.freepik.com/fotos-premium/interior-tienda-ropa-mujer-moda-compras_120897-3015.jpg?w=2000"
+    }
+  ],
+  "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero augue, euismod ut mauris sed, consequat luctus sem. Phasellus turpis sapien, convallis sed metus at, ultrices tincidunt dui. Vivamus porttitor sit amet magna in fermentum. Integer condimentum mollis nulla, vel finibus leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+}
