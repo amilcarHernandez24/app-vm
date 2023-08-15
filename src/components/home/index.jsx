@@ -87,19 +87,19 @@ function Home () {
         <article className={styles.home_body}>
           <div className={styles.home_filters}>
             <div className={filteredStatusId === null ? styles.status_active : ''}>
-                <span onClick={() => handleClick(null)}>All <small>{INFO.tasks.length}</small> | </span>
+                <span onClick={() => handleClick(null)}>TD <small>{INFO.tasks.length}</small> </span>
             </div>
             <div className={filteredStatusId === 0 ? styles.status_active : ''}>
-                <span onClick={() => handleClick(0)}>Untaken <small>{INFO.tasks.reduce((count, task) => count + (task.status_id === 0 ? 1 : 0), 0)}</small></span>
+                <span onClick={() => handleClick(0)}>N/A <small>{INFO.tasks.reduce((count, task) => count + (task.status_id === 0 ? 1 : 0), 0)}</small></span>
             </div>
             <div className={filteredStatusId === 3 ? styles.status_active : ''}>
-                <span onClick={() => handleClick(3)}>Rejected <small>{INFO.tasks.reduce((count, task) => count + (task.status_id === 3 ? 1 : 0), 0)}</small></span>
+                <span onClick={() => handleClick(3)}>RCZ <small>{INFO.tasks.reduce((count, task) => count + (task.status_id === 3 ? 1 : 0), 0)}</small></span>
             </div>
             <div className={filteredStatusId === 2 ? styles.status_active : ''}>
-                <span onClick={() => handleClick(2)}>Pending <small>{INFO.tasks.reduce((count, task) => count + (task.status_id === 2 ? 1 : 0), 0)}</small></span>
+                <span onClick={() => handleClick(2)}>PND <small>{INFO.tasks.reduce((count, task) => count + (task.status_id === 2 ? 1 : 0), 0)}</small></span>
             </div>
             <div className={filteredStatusId === 1 ? styles.status_active : ''}>
-                <span onClick={() => handleClick(1)}>Done <small>{INFO.tasks.reduce((count, task) => count + (task.status_id === 1 ? 1 : 0), 0)}</small></span>
+                <span onClick={() => handleClick(1)}>CMP <small>{INFO.tasks.reduce((count, task) => count + (task.status_id === 1 ? 1 : 0), 0)}</small></span>
             </div>
           </div>
 

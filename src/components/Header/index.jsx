@@ -11,8 +11,10 @@ function Header () {
         <div className={styles.header}>
         <NavLink to='/'><img src={logo} className={styles.logo} alt='logo'/></NavLink>
           <div className={styles.header_content}>
-            {/* <h2 className={styles.header_title}>Portfolio Radar N2</h2>
-            <p className={styles.header_user}>Nombre del colaborador</p> */}
+            <p>
+              <h2 className={styles.header_user}>Sofía Esquire</h2>
+              <p className={styles.header_store}>Tres Cruces</p>
+            </p>
             <FontAwesomeIcon icon={faUser} />
           </div>
         </div>

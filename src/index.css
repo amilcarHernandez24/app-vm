@@ -3,7 +3,7 @@
     --white: #FBFBFD;
     --grey: #E0E0E0;
     --dark-grey: #3c3c41;
-    --primary: #FF4747;
+    --primary: #429E9D;
     --secondary: #4a0000;
     --accent: #9D85FF;
     --success: #0fbda4;
@@ -15,4 +15,5 @@
 
 #root {
     background-color: var(--white);
+    height: 100vh;
 }
