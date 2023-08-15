@@ -3,16 +3,50 @@
 }
 
 .label {
-    display: flex;
-    justify-content: space-between;
-    margin: 5px 0px 5px 0px;
-    padding: 10px 20px;
-    
-    color: var(--dark-grey);
-
-    background-color: var(--grey);
-    border-radius: 5px;
-
-    cursor: pointer;
+    margin: 5px 0px;
 }
 
+.upload {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 5px 0px;
+
+    border: 1px dashed var(--grey);
+    border-radius: 10px;
+}
+
+.icon {
+    color: var(--primary);
+}
+
+.preview_photo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+    border: 1px dashed var(--grey);
+    border-radius: 10px;
+}
+
+.img {
+    width: 70%;
+    height: auto;
+
+    border-radius: 10px;
+}
+
+.icon_group {
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+}
+
+.icon_edit {
+    color: var(--primary);
+}
+
+.icon_delete {
+    color: var(--danger);
+}
